@@ -1,0 +1,39 @@
+function getASIN() {
+    var asinElement = document.getElementById("ASIN") || document.evaluate("//@data-asin", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+    if (!asinElement) {
+        throw new Error("Amazon Keepa Price Charts: unable to find ASIN!");
+    }
+    return asinElement.value;
+}
+
+window.addEventListener("load", function() {
+    var tld = document.domain.split(".").pop();
+    var country = tld;
+    if (tld == "com") {
+        country = "us";
+    }
+
+    var asin = getASIN();
+    if (!asin) {
+        throw new Error("Amazon Keepa Price Charts: unable to get ASIN!");
+    }
+
+    var parentElement = document.getElementById("unifiedPrice_feature_div") || document.getElementById("MediaMatrix");
+    if (!parentElement) {
+        throw new Error("Amazon Keepa Price Charts: unable to get parent element!");
+    }
+
+    var keepaChartContainer = document.createElement("div");
+    var keepaLink = document.createElement("a");
+    keepaLink.target = "_blank";
+    keepaLink.href = "https://keepa.com/#!product/8-" + asin;
+    var keepaChart = new Image(500, 200);
+    keepaChart.src = "https://graph.keepa.com/pricehistory.png?used=1&asin=" + asin + "&domain=" + tld;
+    keepaLink.appendChild(keepaChart);
+    keepaChartContainer.appendChild(keepaLink);
+
+    var chartsContainer = document.createElement("div");
+    chartsContainer.appendChild(keepaChartContainer);
+    parentElement.appendChild(chartsContainer);
+    
+}, false);
