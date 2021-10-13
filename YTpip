@@ -1,0 +1,3 @@
+var pipbtn = document.getElementsByClassName('ytp-pip-button ytp-button')[0];
+pipbtn.removeAttribute('style');
+pipbtn.getElementsByTagName('path')[0].setAttribute('fill','#edc226');
