@@ -9,3 +9,4 @@ youtube.com##.ytd-promoted-sparkles-text-search-renderer
 youtube.com###items > ytd-mini-guide-entry-renderer.style-scope.ytd-mini-guide-renderer:nth-child(2)
 youtube.com###items > ytd-mini-guide-entry-renderer.style-scope.ytd-mini-guide-renderer:first-child
 youtube.com##.ytp-ce-element, .ytp-ce-playlist, .ytp-ce-bottom-left-quad, .ytp-ce-size-1280, .ytp-ce-element-show, .ytp-ce-element-shadow-show
+youtube.com##.ytp-paid-content-overlay
