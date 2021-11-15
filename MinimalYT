@@ -1,4 +1,4 @@
-! Title : MinimalYT
+! Title MinimalYT
 
 youtube.com##.html5-endscreen, .videowall-endscreen, .ytp-endscreen-paginate, .ytp-show-tiles
 youtube.com###items > ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2)
