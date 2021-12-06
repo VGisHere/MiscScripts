@@ -12,3 +12,4 @@ youtube.com##.ytp-ce-element, .ytp-ce-playlist, .ytp-ce-bottom-left-quad, .ytp-c
 youtube.com##.ytp-paid-content-overlay
 
 m.youtube.com###app > ytm-pivot-bar-renderer.pivot-bar-slide-in:nth-child(2) > ytm-pivot-bar-item-renderer:nth-child(2)
+m.youtube.com###app > ytm-pivot-bar-renderer:nth-child(2) > ytm-pivot-bar-item-renderer:nth-child(2)
