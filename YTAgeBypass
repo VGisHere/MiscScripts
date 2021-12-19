@@ -222,11 +222,13 @@
   let wrappedNextResponse;
 
   function attachInitialDataInterceptor(onInititalDataSet) {
+  console.info("Debug point 1")
     // Just for compatibility: Backup original getter/setter for 'ytInitialPlayerResponse', defined by other extensions like AdBlock
     let { get: chainedPlayerGetter, set: chainedPlayerSetter } = Object.getOwnPropertyDescriptor(window, 'ytInitialPlayerResponse') || {};
-
+    console.info("debug point 2")
     // Just for compatibility: Intercept (re-)definitions on YouTube's initial player response property to chain setter/getter from other extensions by hijacking the Object.defineProperty function
     Object.defineProperty = (obj, prop, descriptor) => {
+    console.info("debug point 3")
       if (obj === window && PLAYER_RESPONSE_ALIASES.includes(prop)) {
         console.info("Another extension tries to redefine '" + prop + "' (probably an AdBlock extension). Chain it...");
 
