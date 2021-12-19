@@ -230,11 +230,13 @@
     Object.defineProperty = (obj, prop, descriptor) => {
     console.info("debug point 3")
       if (obj === window && PLAYER_RESPONSE_ALIASES.includes(prop)) {
+        console.info("debug point 4")
         console.info("Another extension tries to redefine '" + prop + "' (probably an AdBlock extension). Chain it...");
 
         if (descriptor !== null && descriptor !== void 0 && descriptor.set) chainedPlayerSetter = descriptor.set;
         if (descriptor !== null && descriptor !== void 0 && descriptor.get) chainedPlayerGetter = descriptor.get;
       } else {
+        console.info("debug point 5")
         nativeObjectDefineProperty(obj, prop, descriptor);
       }
     };
