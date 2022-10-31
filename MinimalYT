@@ -1,17 +1,20 @@
 ! Title MinimalYT
 
 youtube.com##.html5-endscreen, .videowall-endscreen, .ytp-endscreen-paginate, .ytp-show-tiles
-youtube.com###items > ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2)
 youtube.com###merch-shelf
 music.youtube.com##.ytmusic-tastebuilder-shelf-renderer
 youtube.com##.gstl_50, .sbdd_c
 youtube.com##.ytd-promoted-sparkles-text-search-renderer
-youtube.com###items > ytd-mini-guide-entry-renderer.style-scope.ytd-mini-guide-renderer:nth-child(2)
+
 youtube.com###items > ytd-mini-guide-entry-renderer.style-scope.ytd-mini-guide-renderer:first-child
+youtube.com###items > ytd-mini-guide-entry-renderer.style-scope.ytd-mini-guide-renderer:nth-child(2)
+youtube.com###items > ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2)
+! youtube.com###items > ytd-mini-guide-entry-renderer.style-scope.ytd-mini-guide-renderer:nth-child(3)
+! youtube.com###items > ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(3)
+
 youtube.com##.ytp-ce-element, .ytp-ce-playlist, .ytp-ce-bottom-left-quad, .ytp-ce-size-1280, .ytp-ce-element-show, .ytp-ce-element-shadow-show
 youtube.com##.ytp-paid-content-overlay
-youtube.com###items > ytd-mini-guide-entry-renderer.style-scope.ytd-mini-guide-renderer:nth-child(3)
-youtube.com###items > ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(3)
+
 youtube.com###sections > ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(3)
 
 m.youtube.com###app > ytm-pivot-bar-renderer.pivot-bar-slide-in:nth-child(2) > ytm-pivot-bar-item-renderer:nth-child(2)
